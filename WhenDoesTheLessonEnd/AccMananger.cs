@@ -11,8 +11,8 @@ namespace LessonEndV2Main
         public static bool login()
         {
             string Username1, Password1;
-            Username1 = PyFileMananger.read(@"C:\Users\Lenovo\Documents\MincraftWorldBackup\username.txt");
-            Password1 = PyFileMananger.read(@"C:\Users\Lenovo\Documents\MincraftWorldBackup\password.txt");
+            Username1 = PyFileMananger.read(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "LessonEndSchedules", "username.txt"));
+            Password1 = PyFileMananger.read(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "LessonEndSchedules", "passworld.txt"));
             Console.WriteLine("Username");
             bool username = false, password = false;
             while (username == false)
